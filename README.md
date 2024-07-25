@@ -11,5 +11,5 @@ memos telegram bot written in java language
 2.切换到根目录   
 `cd memos_bot`
 
-3.docker部署
+3.docker部署   
 `docker-compose up -d`
