@@ -8,5 +8,8 @@ memos telegram bot written in java language
 1.下载源码
 `git clone https://github.com/lovept/memos_bot.git`   
 
-2.docker部署
+2.切换到根目录   
+`cd memos_bot`
+
+3.docker部署
 `docker-compose up -d`
