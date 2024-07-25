@@ -5,10 +5,10 @@ services:
     image: memos_bot
     container_name: memos_bot
     ports:
-      - "5005:5005"
+      - "6666:6666"
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - /your_path:/app/log
+      - ${PWD}/log:/app/log
     restart: always

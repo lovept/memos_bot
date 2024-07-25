@@ -17,6 +17,7 @@
         <java.version>21</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.compiler.release>${java.version}</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-boot.version>3.3.2</spring-boot.version>
         <mybatis-plus.version>3.5.7</mybatis-plus.version>
@@ -29,6 +30,7 @@
         <log4j.version>2.23.1</log4j.version>
         <telegrambots.version>6.9.7.1</telegrambots.version>
         <java-telegram-bot-api>7.7.0</java-telegram-bot-api>
+        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
     </properties>
     <dependencies>
         <dependency>
@@ -128,6 +130,16 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+
         </plugins>
 
     </build>
